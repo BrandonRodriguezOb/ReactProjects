@@ -10,6 +10,7 @@ interface SquareProps {
 export const Square = ({ children, updateBoard, index, isSelected }: SquareProps) => {
 const className = `square ${isSelected ? 'is-selected' : ''}`
 console.log("isSelected:", isSelected);
+
 const handleClick = () => {
     if (updateBoard && index !== undefined) {
         updateBoard(index);
